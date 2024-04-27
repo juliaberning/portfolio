@@ -1,16 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Portfolio</h1>
-    <p>Under construction &#128679;</p>
-    <img src="assets/juliaberning.JPEG" alt="Profile Picture">
-</body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobileview.css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <nav id="desktop-menu">
+      <div class="logo">Julia Berning</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="mobile-menu">
+      <div class="logo">Julia Berning</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="about">
+      <div class="container">
+        <h1 class="title">About Me</h1>
+        <p>
+          As an aspiring software engineer with a background in Food Science, I
+          bring a unique blend of analytical thinking, problem-solving skills,
+          and a passion for innovation to the world of technology.
+        </p>
+      </div>
+    </section>
+    <section id="experience">
+      <h1 class="title">Experience</h1>
+      <p>Under construction &#128679;</p>
+    </section>
+    <section id="projects">
+      <h1 class="title">Projects</h1>
+      <p>Under construction &#128679;</p>
+    </section>
+    <section id="contact">
+      <h1 class="title">Contact</h1>
+      <div id="socials-container">
+        <img
+          src="./assets/linkedin-logo.png"
+          alt="LinkedIn profile"
+          class="icon"
+          onclick="location.href='https://www.linkedin.com/in/berning-jc/'"
+        />
+        <img
+          src="./assets/github-logo.png"
+          alt="Github profile"
+          class="icon"
+          onclick="location.href='https://github.com/juliaberning'"
+        />
+        <img
+          src="./assets/email-logo.png"
+          alt="Email address"
+          class="icon"
+          onclick="window.location.href='mailto:berning.jc@email.com';"
+        />
+      </div>
+    </section>
+  </body>
 </html>

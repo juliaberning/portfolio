@@ -1,0 +1,64 @@
+@media screen and (max-width: 1200px) {
+  #desktop-menu {
+    display: none;
+  }
+  #mobile-menu {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  section {
+    display: block;
+    height: fit-content;
+  }
+  .section-container {
+    margin: 0 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  article,
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    height: 46vw;
+    justify-content: center;
+    width: auto;
+  }
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}
