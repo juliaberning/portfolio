@@ -24,16 +24,6 @@ a:hover {
   color: #828e84;
 }
 
-.container {
-  width: 60%;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-section {
-  padding-bottom: 5%;
-}
-
 /* Header styles */
 nav,
 .nav-links {
@@ -55,20 +45,6 @@ nav {
 .logo {
   font-size: 1.5rem;
   cursor: default;
-}
-
-/* Icon styles */
-#socials-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.icon {
-  cursor: pointer;
-  height: 2rem;
-  width: 2rem;
-  margin: 0 0.5rem;
 }
 
 /* Mobile Menu styles */
@@ -135,4 +111,58 @@ nav {
 
 .hamburger-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
+}
+
+/* Section styles */
+
+section {
+  padding-top: 4vh;
+  height: fit-content;
+  margin: 0 30rem;
+  box-sizing: border-box;
+}
+
+.introduction-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introduction-text,
+.introduction-image {
+  flex: 1;
+}
+
+.introduction-text {
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 50px;
+}
+
+.introduction-text h1 {
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+.introduction-image {
+  margin-left: 50px;
+  margin-right: 20px;
+}
+
+.image {
+  height: 300px;
+  width: 300px;
+}
+
+#socials-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+  margin: 0 0.5rem;
 }

@@ -5,29 +5,29 @@
   #mobile-menu {
     display: flex;
   }
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
-  #profile,
   section {
-    display: block;
-    height: fit-content;
+    margin: 0 0rem;
   }
   .section-container {
     margin: 0 5%;
   }
+
+  .introduction-container {
+    flex-direction: column-reverse;
+    height: fit-content;
+  }
+  .introduction-image {
+    margin: 0 auto 2rem;
+  }
+
+  .introduction-text {
+    text-align: center;
+
+    margin: 0 7rem 2rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
-  }
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
-  }
   article,
   .contact-info-container p,
   .nav-links li a {
@@ -42,23 +42,7 @@
     gap: 0.5rem;
     text-align: center;
   }
-  .section__pic-container {
-    height: 46vw;
-    justify-content: center;
-    width: auto;
-  }
   .title {
     font-size: 2rem;
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
-  }
-  #contact,
-  #projects {
-    height: fit-content;
   }
 }
