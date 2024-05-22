@@ -9,39 +9,43 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mobileview.css" />
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/mediaqueries.css" />
+    <link rel="stylesheet" href="styles/components/header.css" />
   </head>
   <body>
     <script src="script.js"></script>
-    <nav id="desktop-menu">
-      <div class="logo">Julia Berning</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="mobile-menu">
-      <div class="logo">Julia Berning</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+    <header>
+      <nav id="desktop-menu">
+        <div class="logo">Julia Berning</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </nav>
+      <nav id="mobile-menu">
+        <div class="logo">Julia Berning</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
         </div>
-      </div>
-    </nav>
-
+      </nav>
+    </header>
     <section id="introduction">
       <div class="introduction-container">
         <div class="introduction-text">
@@ -57,7 +61,7 @@
           <img
             src="./assets/juliaberningcircle.png"
             alt="Julia Berning Photo"
-            class="image"
+            class="intro-image"
           />
         </div>
       </div>
@@ -74,7 +78,41 @@
     </section>
     <section id="projects">
       <h1 class="title">Projects</h1>
-      <p>Under construction &#128679;</p>
+      <div class="projects-container">
+        <div class="project">
+          <img class="project-image" src="assets/bubble-detector.png" alt="" />
+          <h3>
+            <a href="https://en.wikipedia.org/wiki/Image_analysis#:~:text=Image%20analysis%20or%20imagery%20analysis,a%20person%20from%20their%20face."
+              >Bubble detector
+            </a>
+          </h3>
+          <p>
+            Creation of a web application that detects and quantifies bubbles in
+            a microscopic picture.
+          </p>
+        </div>
+        <div class="project">
+          <img class="project-image" src="assets/data-table.png" alt="" />
+          <h3>
+            <a href="https://vuetifyjs.com/en/components/data-tables/basics/"
+              >Frontend-improvements
+            </a>
+          </h3>
+          <p>
+            Improvement of a vue data table for a more efficient data-analysis
+            and better user experience in
+            <a href="https://home.synthesis.notco.ai/#">Synthesis</a>, an
+            AI-powered combinatorics engine for food developers.
+          </p>
+        </div>
+        <div class="project">
+          <img class="project-image" src="assets/raspberry-pi.png" alt="" />
+          <h3>
+            <a href="https://www.raspberrypi.com/">Valve control automation</a>
+          </h3>
+          <p>Project in progress. Implementation of a Feedback loop.</p>
+        </div>
+      </div>
     </section>
     <section id="contact">
       <h1 class="title">Contact</h1>
@@ -82,19 +120,19 @@
         <img
           src="./assets/linkedin-logo.png"
           alt="LinkedIn profile"
-          class="icon"
+          class="socials-icon"
           onclick="location.href='https://www.linkedin.com/in/berning-jc/'"
         />
         <img
           src="./assets/github-logo.png"
           alt="Github profile"
-          class="icon"
+          class="socials-icon"
           onclick="location.href='https://github.com/juliaberning'"
         />
         <img
           src="./assets/email-logo.png"
           alt="Email address"
-          class="icon"
+          class="socials-icon"
           onclick="window.location.href='mailto:berning.jc@gmail.com';"
         />
       </div>

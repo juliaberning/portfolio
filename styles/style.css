@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: "Ysabeau", sans-serif;
+}
+
+p {
+  color: #687169;
+}
+
+section {
+  padding: 4vh 0.5rem;
+  height: fit-content;
+  margin: 0 12rem;
+  box-sizing: border-box;
+}
+
+.introduction-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introduction-text,
+.introduction-image {
+  flex: 1;
+  margin-left: 20px;
+  margin-right: 50px;
+}
+
+.introduction-text {
+  text-align: left;
+}
+
+.introduction-text h1 {
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+.intro-image {
+  height: 300px;
+  border-radius: 15rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+}
+
+.projects-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.project {
+  padding: 1.5rem;
+  flex: 1;
+  border-radius: 1rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  text-align: center;
+}
+
+.project-image {
+  width: 75%;
+}
+
+#socials-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials-icon {
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+  margin: 0 0.5rem;
+}
